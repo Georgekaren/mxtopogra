@@ -1,0 +1,208 @@
+/**
+ *! Copyright (c) 2011 lxh13@126.com (QQ:1208376545)
+ *
+ * Version 1.0.0 
+ */
+div.lly-grid *{
+	font-size:12px ;
+	font-family: "微软雅黑"
+}
+
+div.lly-grid{
+	position:relative ;
+	width:100%;
+}
+
+div.lly-grid-content table{
+	table-layout:fixed;
+}
+
+div.lly-grid .lly-grid-caption{
+	border:none;
+}
+
+.lly-grid-1,.lly-grid-2{
+	border-width:0px;
+}
+
+.lly-grid-1 table{
+	/*width:100%;*/
+	overflow:hidden;
+}
+
+.lly-grid table td{
+	text-align: center;
+}
+
+div.lly-grid-content{
+	position:relative;
+	border-width: 0px;
+}
+
+.lly-grid-content .lly-grid-1,.lly-grid-content .lly-grid-2{
+	float:left;
+}
+
+.lly-grid-content .ui-widget-header{
+	border:none;
+}
+
+.lly-grid-scroll-y{
+	padding-bottom:20px;
+}
+
+.lly-grid-scroll-x{
+	padding-right:20px;
+	float:left;
+}
+
+.lly-grid-even{
+}
+
+.lly-grid-odd{
+}
+
+.lly-sort-col{
+	cursor:pointer;
+}
+
+.lly-grid .lly-grid-row td.lly-grid-body-column{
+	height: 22px;
+	padding: 0 2px 0 2px;
+	border-right-width:1px;
+	border-right-style:solid;
+	border-right-color: inherit;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	border-bottom-color: inherit;
+	border-left:none;
+	border-top:none;
+	font-weight: normal;
+}
+
+
+.lly-grid .lly-grid-head th.lly-grid-head-column{
+	border-left:none;
+	border-top:none;
+	border-bottom:none;
+	padding: 0 2px 0 2px;
+	border-right-width:1px;
+	border-right-style:solid;
+	border-right-color: inherit;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	border-bottom-color: inherit;
+	height: 22px;
+}
+
+.lly-grid .lly-grid-head tr{
+	height:23px;
+}
+
+.lly-grid .lly-grid-1-head th.lly-grid-fixcell{
+	height: 22px;
+	border-right-width:0px;
+	border-left-width:0px;
+}
+
+.lly-grid-caption span{
+	font-weight:bold;
+}
+
+.lly-grid .lly-grid-head th.lly-grid-head-column div{
+	font-weight: bold;
+}
+
+.lly-grid .lly-grid-head th.lly-grid-head-column div .lly-sort{
+	right:-3px;
+	top:-2px;
+	position:absolute;
+}
+
+.lly-grid div.lly-grid-head{
+	border-left:none;
+	border-right:none;
+	border-top-width:1px;
+	border-top-style:solid;
+	border-top-color:inherit;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	border-bottom-color:inherit;
+}
+
+.lly-grid-2-head{
+	overflow: hidden;
+	width:100%;
+}
+
+.lly-grid-2-body{
+	overflow:auto;
+	width:100%;
+}
+
+.lly-grid-1-head{
+	overflow: hidden;
+}
+
+.lly-grid-1-body{
+	overflow:hidden;
+}
+
+.lly-grid-caption{
+	padding: .3em .2em .2em .3em;
+}
+
+.lly-grid-caption span{
+	display:block;
+	float:left;
+	padding-left:5px;
+}
+
+.lly-grid div.lly-grid-pager{
+	border-left:0px;
+	border-right:0px;
+	border-bottom:0px;
+	border-top-color: inherit;
+	padding:0px;
+	margin:0px;
+	height:25px;
+}
+
+.lly-grid-pager input ,.lly-grid-pager select{
+	font-size:11px;
+}
+
+
+._page_{
+	display:block;
+	float:left;
+	margin:0px 2px;
+	height:20px;
+}
+
+._numpage_{
+	width:15px;
+}
+
+.cell-div{
+    overflow:hidden;
+    white-space:nowrap;
+	text-overflow:ellipsis;
+	word-break : keep-all; 
+    -o-text-overflow: ellipsis;
+}
+
+.lly-grid-mask{
+	position:absolute;
+	border:1px solid red;
+}
+
+.lly-grid-mask-msg{
+	position:absolute;
+	cursor1:wait;
+	width:auto;
+	height:16px;
+	padding:12px 12px;
+	font-size:14px;
+	border-width: 2px !important;
+}

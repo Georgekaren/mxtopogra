@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>subdata</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+	<meta http-equiv="cache-control" content="no-cache"/>
+  
+   <script src="js/jquery-1.6.2.js" type="text/javascript"></script>
+   <script src="js/jquery-ui-1.8.16.custom.min.js" type="text/javascript"></script>
+   <link   href="styles/ui.css" type="text/css" rel="stylesheet" />
+   <script src="js/grid.js" type="text/javascript"></script>
+   <link   href="styles/grid.css" type="text/css" rel="stylesheet" />
+  
+   <script type="text/javascript">
+
+   
+	$(function(){
+			$(".grid-content").llygrid({
+				columns:[
+		           	{align:"center",key:"SERVICE_ID",label:"业务代码", width:"100"},
+		            {align:"center",key:"NAME",label:"业务名称", width:"100"},
+					{align:"center",key:"TECHTYPE",label:"业务类型", width:"100"},
+					{align:"center",key:"MANAGER",label:"用户", width:"100"},
+					{align:"center",key:"CREATETIME",label:"创建时间", width:"100"},
+		         ],
+		         ds:{type:"data",records:[
+		           	 {"SERVICE_ID":"STMP2","NAME":"汕头手机报1","TECHTYPE":"彩信","MANAGER":"李斌","CREATETIME":"2010-05-01"}
+					,{"SERVICE_ID":"STMP2","NAME":"汕头手机报2","TECHTYPE":"彩信","MANAGER":"李斌","CREATETIME":"2010-05-01"}
+					,{"SERVICE_ID":"STMP2","NAME":"汕头手机报3","TECHTYPE":"彩信","MANAGER":"李斌","CREATETIME":"2010-05-01"}
+					,{"SERVICE_ID":"STMP2","NAME":"汕头手机报4","TECHTYPE":"彩信","MANAGER":"李斌","CREATETIME":"2010-05-01"}
+					,{"SERVICE_ID":"STMP2","NAME":"汕头手机报5","TECHTYPE":"彩信","MANAGER":"李斌","CREATETIME":"2010-05-01"}
+					,{"SERVICE_ID":"STMP2","NAME":"汕头手机报6","TECHTYPE":"彩信","MANAGER":"李斌","CREATETIME":"2010-05-01"}
+					,{"SERVICE_ID":"STMP2","NAME":"汕头手机报7","TECHTYPE":"彩信","MANAGER":"李斌","CREATETIME":"2010-05-01"}
+ 				 ]},
+				 limit:20,
+				 pageSizes:[10,20,30,40],
+				 height:200,
+				 title:"测试列表Demo",
+				 indexColumn:true,
+				 querys:{name:"hello",name2:"world"},
+				 loadMsg:"数据加载中，请稍候......"
+			}) ;
+   	 });
+   </script>
+   
+   <style>
+   		*{
+   			font:12px "微软雅黑";
+   		}
+   </style>
+
+</head>
+<body>
+
+<table>
+<tr><td rowspan="1" colspan="1"></td></tr>
+	</table>
+	<div class="grid-content">
+	</div>
+</body>
+</html>
